@@ -1,0 +1,83 @@
+/* TitleCards Container */
+.titlecards {
+    margin: 50px 0 30px;
+  }
+  
+  .titlecards h2 {
+    margin-bottom: 8px;
+  }
+  
+  /* Card List */
+  .card-list {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .card-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Individual Card */
+  .card {
+    flex: 0 0 auto;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .card:hover p {
+    color: #e50914;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .titlecards h2 {
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 150px;
+    }
+  
+    .card p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .titlecards h2 {
+      font-size: 18px;
+    }
+  
+    .card {
+      width: 120px;
+    }
+  
+    .card p {
+      font-size: 12px;
+    }
+  }

@@ -1,0 +1,129 @@
+/* Navbar Container */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: white;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
+    z-index: 1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Navbar Left Section */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .navbar-left img {
+    width: 90px;
+  }
+  
+  .navbar-left ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .navbar-left ul li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-left ul li:hover {
+    color: #e50914;
+  }
+  
+  /* Navbar Right Section */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-right .icons {
+    width: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .navbar-right .icons:hover {
+    opacity: 0.7;
+  }
+  
+  .navbar-right p {
+    font-size: 14px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-right p:hover {
+    color: #e50914;
+  }
+  
+  /* Navbar Profile Section */
+  .navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .navbar-profile .profile {
+    height: 30px;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .navbar-profile .c_icon {
+    height: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-profile:hover .c_icon {
+    transform: rotate(180deg);
+  }
+  
+  .navbar .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    background: #191919;
+    padding: 18px 22px;
+    border-radius: 2px;
+    z-index: 1;
+    display: none;
+  }
+  
+  .navbar .dropdown p {
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .navbar-profile:hover .dropdown {
+    display: block;
+  }
+  
+  .nav-dark {
+    background: #141414;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-left ul,
+    .navbar-right p {
+      display: none;
+    }
+  
+    .navbar-right .icons {
+      margin: 0 10px;
+    }
+  }

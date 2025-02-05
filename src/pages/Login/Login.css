@@ -1,0 +1,177 @@
+/* Login Container */
+.login {
+    height: 100vh;
+    background-image: linear-gradient(#0000007e, #0000007e), url(/background_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+
+/* Login Logo */
+.login-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Login Form */
+.login-form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    opacity: 0.9;
+}
+
+.login-form h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-form input::placeholder {
+    color: #8c8c8c;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #ef2a33;
+    color: #bab6b6;
+}
+
+/* Form Help Section */
+.form_help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember input {
+    width: auto;
+    margin: 0;
+}
+
+.form_help p {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.form_help p:hover {
+    color: #e50914;
+}
+
+/* Form Switch Section */
+.form-switch {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+.form-switch span {
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.form-switch span:hover {
+    color: #e50914;
+}
+.login-spinner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-spinner img{
+    width: 60px;
+}
+
+
+@media (max-width: 768px) {
+    .login-form {/* Responsive Design */
+        padding: 30px;
+    }
+
+    .login-form h1 {
+        font-size: 28px;
+    }
+
+    .login-form input {
+        font-size: 14px;
+    }
+
+    .login-form button {
+        font-size: 14px;
+    }
+
+    .form_help {
+        font-size: 12px;
+    }
+
+    .form-switch {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        padding: 20px;
+    }
+
+    .login-form h1 {
+        font-size: 24px;
+    }
+
+    .login-form input {
+        font-size: 12px;
+    }
+
+    .login-form button {
+        font-size: 12px;
+    }
+
+    .form_help {
+        font-size: 10px;
+    }
+
+    .form-switch {
+        font-size: 12px;
+    }
+}
